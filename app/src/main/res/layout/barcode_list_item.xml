@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+    <variable
+        name="barcode"
+        type="android.com.jamsand.io.busyshopapp.model.Barcode" />
+</data>
+<LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -17,9 +24,10 @@
         android:id="@+id/barcodeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="100110011868"
+        android:text="@string/barcode"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:layout_marginStart="45dp"
         android:textSize="20sp" />
 </LinearLayout>
+</layout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BusyShop App</string>
+    <string name="barcodes">Barcodes</string>
+    <string name="default_code">100110011868</string>
+    <string name="barcode">barcode</string>
+    <string name="busy_shop">The Busy Shop</string>
 </resources>

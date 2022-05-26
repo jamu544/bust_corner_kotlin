@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17447916666666666" />
+        <entry key="app/src/main/res/layout/activity_product.xml" value="0.203125" />
         <entry key="app/src/main/res/layout/barcode_list_item.xml" value="0.17447916666666666" />
       </map>
     </option>
