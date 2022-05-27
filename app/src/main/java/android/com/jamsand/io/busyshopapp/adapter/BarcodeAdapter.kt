@@ -1,5 +1,6 @@
 package android.com.jamsand.io.busyshopapp.adapter
 
+import android.com.jamsand.io.busyshopapp.R
 import android.com.jamsand.io.busyshopapp.adapter.BarcodeAdapter.BarcodeHolder
 import android.com.jamsand.io.busyshopapp.databinding.BarcodeListItemBinding
 import android.com.jamsand.io.busyshopapp.model.Barcode
@@ -8,6 +9,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class BarcodeAdapter(val context: Context, var barcodes: List<Barcode>, private val onClickListener: OnClickListener):
     RecyclerView.Adapter<BarcodeHolder>() {
@@ -24,7 +26,9 @@ class BarcodeAdapter(val context: Context, var barcodes: List<Barcode>, private 
         holder.binding.barcodeTextView.text = barcode.barcodeNumber
         val resourceID = context.resources.getIdentifier(barcode.codeImage,"drawable",
             context.packageName)
-        holder.binding.barcodeImageView.setImageResource(resourceID)
+//        holder.binding.barcodeImageView.setImageResource(resourceID)
+//        Glide.with(context).load(barcode.codeImage).placeholder(R.drawable.barcode).into(holder.binding.barcodeImageView)
+
 
         holder.itemView.setOnClickListener { onClickListener.clickListener(barcode) }
     }
